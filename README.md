@@ -7,7 +7,7 @@ the executable that when you press a key from keyboard,it will play a song
 ## edit  
 install package  
 ```
-pip install pynput playsound  
+pip install pynput playsound  simpleaudio
 ```
 
 ## to exe  
