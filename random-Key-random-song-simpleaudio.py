@@ -1,14 +1,12 @@
 # press anykey will play the song
 
 from pynput import keyboard
-import os
 import simpleaudio as sa
 from random import randrange
 
 first=1
 finial=5 # total song amount
-wave_obj = sa.WaveObject.from_wave_file(
-    os.getcwd()+f"\\song{randrange(first,finial)}.wav") # random play song
+wave_obj = sa.WaveObject.from_wave_file("song{randrange(first,finial)}.wav") # random play song
 play_obj = wave_obj.play()
 play_obj.stop()
 
