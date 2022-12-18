@@ -3,10 +3,9 @@
 from pynput import keyboard
 from playsound import playsound
 import multiprocessing
-import os
 
 def playsong():
-    playsound(sound=os.getcwd()+"\\song.wav")  # song's file format must be wav
+    playsound(sound="song.wav")  # song's file format must be wav
 
 p = multiprocessing.Process(target=playsong)
 
