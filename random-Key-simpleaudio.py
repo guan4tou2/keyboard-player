@@ -1,11 +1,10 @@
 # press anykey will play the song
 
 from pynput import keyboard
-import os
 import simpleaudio as sa
 from random import randrange
 
-wave_obj = sa.WaveObject.from_wave_file(os.getcwd()+"\\song.wav")
+wave_obj = sa.WaveObject.from_wave_file("song.wav")
 play_obj = wave_obj.play()
 play_obj.stop()
 
