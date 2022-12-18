@@ -19,3 +19,6 @@ bundles a Python application
  ```
  pyinstaller -w -F -icon="file.ico"
  ```
+
+## use
+put wave file and exe file at same directory
